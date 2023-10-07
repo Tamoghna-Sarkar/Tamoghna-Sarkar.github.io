@@ -1,0 +1,17 @@
+.publication-item {
+    margin-bottom: 20px;
+  }
+  
+  .publication-title {
+    font-weight: bold;
+  }
+  
+  .publication-meta {
+    font-style: italic;
+  }
+  
+  .publication-link {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
