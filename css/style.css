@@ -2438,4 +2438,13 @@ body {
   }
 }
 
+.sub-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.highlighted-role {
+  color: #007bff;  /* Choose the color that fits your design */
+}
+
 /*# sourceMappingURL=style.css.map */
