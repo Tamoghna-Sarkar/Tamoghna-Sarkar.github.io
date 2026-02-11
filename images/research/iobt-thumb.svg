@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <!-- Radar circle -->
+  <circle cx="200" cy="110" r="55" fill="none" stroke="#F97B8B" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="200" cy="110" r="38" fill="none" stroke="#F97B8B" stroke-width="1.5" opacity="0.6"/>
+  <circle cx="200" cy="110" r="20" fill="none" stroke="#F97B8B" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="200" cy="110" r="4" fill="#F97B8B"/>
+  <!-- Radar sweep -->
+  <line x1="200" y1="110" x2="245" y2="75" stroke="#F97B8B" stroke-width="2" opacity="0.9"/>
+  <!-- Sensor nodes -->
+  <circle cx="155" cy="85" r="5" fill="#6C6CE5"/>
+  <circle cx="230" cy="130" r="5" fill="#6C6CE5"/>
+  <circle cx="180" cy="145" r="5" fill="#6C6CE5"/>
+  <circle cx="240" cy="80" r="5" fill="#F9D74C"/>
+  <circle cx="165" cy="125" r="5" fill="#F9D74C"/>
+  <!-- Sound waves -->
+  <path d="M240 80 Q255 80 255 95" fill="none" stroke="#F9D74C" stroke-width="1.5" opacity="0.6"/>
+  <path d="M240 80 Q260 80 260 100" fill="none" stroke="#F9D74C" stroke-width="1.5" opacity="0.4"/>
+  <text x="200" y="200" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="26" font-weight="bold">IoBT</text>
+  <text x="200" y="228" text-anchor="middle" fill="#9a9ab0" font-family="Arial, sans-serif" font-size="13">Army Research Lab</text>
+  <text x="200" y="252" text-anchor="middle" fill="#9a9ab0" font-family="Arial, sans-serif" font-size="12">Acoustic Localization</text>
+</svg>

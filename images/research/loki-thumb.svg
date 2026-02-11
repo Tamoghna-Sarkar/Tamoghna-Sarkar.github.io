@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#1a1a2e"/>
+  <circle cx="200" cy="110" r="50" fill="none" stroke="#6C6CE5" stroke-width="3"/>
+  <circle cx="170" cy="95" r="8" fill="#6C6CE5"/>
+  <circle cx="230" cy="95" r="8" fill="#6C6CE5"/>
+  <circle cx="200" cy="130" r="8" fill="#6C6CE5"/>
+  <line x1="170" y1="95" x2="230" y2="95" stroke="#6C6CE5" stroke-width="2"/>
+  <line x1="170" y1="95" x2="200" y2="130" stroke="#6C6CE5" stroke-width="2"/>
+  <line x1="230" y1="95" x2="200" y2="130" stroke="#6C6CE5" stroke-width="2"/>
+  <path d="M160 105 L140 140 L160 140" fill="none" stroke="#F9D74C" stroke-width="2"/>
+  <path d="M240 105 L260 140 L240 140" fill="none" stroke="#F9D74C" stroke-width="2"/>
+  <text x="200" y="195" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="28" font-weight="bold">LoKI</text>
+  <text x="200" y="225" text-anchor="middle" fill="#9a9ab0" font-family="Arial, sans-serif" font-size="14">Kafka + Confluent</text>
+  <text x="200" y="250" text-anchor="middle" fill="#9a9ab0" font-family="Arial, sans-serif" font-size="12">Cloud Systems &amp; Networking</text>
+</svg>
