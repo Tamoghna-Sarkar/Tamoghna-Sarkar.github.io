@@ -294,38 +294,22 @@ $(function(){
      Text Rotating
      =========================================================================*/
     $(".text-rotating").Morphext({
-        // The [in] animation type. Refer to Animate.css for a list of available animations.
         animation: "bounceIn",
-        // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
         separator: ",",
-        // The delay between the changing of each phrase in milliseconds.
         speed: 4000,
         complete: function () {
-            // Called after the entrance animation is executed.
         }
     });
 
-    /*=========================================================================
-     Add (nav-link) class to main menu.
-     =========================================================================*/
     $('.vertical-menu li a').addClass('nav-link');
 
-    /*=========================================================================
-     Bootstrap Scrollspy
-     =========================================================================*/
     $("body").scrollspy({ target: ".scrollspy"});
 
-    /*=========================================================================
-     Counterup JS for facts
-     =========================================================================*/
     $('.count').counterUp({
       delay: 10,
       time: 2000
     });
 
-    /*=========================================================================
-     Progress bar animation with Waypoint JS
-     =========================================================================*/
     if ($('.skill-item').length > 0) { 
       var waypoint = new Waypoint({
         element: document.getElementsByClassName('skill-item'),
@@ -342,9 +326,6 @@ $(function(){
       });
     }
 
-    /*=========================================================================
-     Spacer with Data Attribute
-     =========================================================================*/
     var list = document.getElementsByClassName('spacer');
 
     for (var i = 0; i < list.length; i++) {
@@ -352,9 +333,6 @@ $(function(){
       list[i].style.height = "" + size + "px";
     }
 
-    /*=========================================================================
-     Background Color with Data Attribute
-     =========================================================================*/
      var list = document.getElementsByClassName('data-background');
 
      for (var i = 0; i < list.length; i++) {
@@ -362,9 +340,6 @@ $(function(){
        list[i].style.backgroundColor = "" + color + "";
      }
 
-    /*=========================================================================
-            Main Menu
-    =========================================================================*/
     $( ".submenu" ).before( '<i class="ion-md-add switch"></i>' );
 
     $(".vertical-menu li i.switch").on( 'click', function() {
@@ -373,21 +348,125 @@ $(function(){
         $submenu.parent().toggleClass("openmenu");
     });
 
-    /*=========================================================================
-            Scroll to Top
-    =========================================================================*/
     $(window).scroll(function() {
-        if ($(this).scrollTop() >= 350) {        // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        if ($(this).scrollTop() >= 350) {
+            $('#return-to-top').fadeIn(200);
         } else {
-            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+            $('#return-to-top').fadeOut(200);
         }
     });
-    $('#return-to-top').on('click', function(event) {     // When arrow is clicked
+    $('#return-to-top').on('click', function(event) {
       event.preventDefault();
         $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
+            scrollTop : 0
         }, 400);
     });
 
+});
+
+$(function() {
+    "use strict";
+
+    if (!document.getElementById('latest-news-styles')) {
+        var style = document.createElement('style');
+        style.id = 'latest-news-styles';
+        style.textContent = '\n#news .latest-news-wrap{max-width:1100px;margin:0 auto}'+
+        '\n#news .latest-news-sub{color:#b8b6d9;margin:0 0 30px;max-width:760px}'+
+        '\n#news .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px;align-items:stretch}'+
+        '\n#news .news-card{position:relative;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 22px;overflow:hidden;min-height:250px;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
+        '\n#news .news-card:before{content:"";position:absolute;inset:auto auto -40px -20px;width:160px;height:160px;border-radius:50%;filter:blur(35px);opacity:.20;pointer-events:none}'+
+        '\n#news .news-card.red:before{background:#FF4C60}'+
+        '\n#news .news-card.yellow:before{background:#FFD15C}'+
+        '\n#news .news-card.purple:before{background:#6C6CE5}'+
+        '\n#news .news-card.teal:before{background:#44D7B6}'+
+        '\n#news .news-accent{position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#FF4C60,#FFD15C,#6C6CE5,#44D7B6);opacity:.9}'+
+        '\n#news .news-eyebrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}'+
+        '\n#news .news-pill{display:inline-block;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.08);color:#fff}'+
+        '\n#news .news-year{color:#b8b6d9;font-size:13px;font-weight:600}'+
+        '\n#news .news-card h3{font-size:22px;line-height:1.3;margin:6px 0 10px;color:#fff}'+
+        '\n#news .news-card p{margin:0 0 14px;color:#eceafd}'+
+        '\n#news .news-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}'+
+        '\n#news .news-tag{font-size:12px;padding:6px 10px;border-radius:999px;color:#f5f4ff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08)}'+
+        '\n#news .news-card.wide{grid-column:span 3;min-height:190px}'+
+        '\n#news .news-list{margin:12px 0 0 0;padding-left:18px;color:#eceafd}'+
+        '\n#news .news-list li{margin:8px 0}'+
+        '\n#news .news-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#FFD15C;margin-right:8px;box-shadow:0 0 0 8px rgba(255,209,92,.12);vertical-align:middle}'+
+        '\n@media (max-width:980px){#news .news-grid{grid-template-columns:1fr 1fr}#news .news-card.wide{grid-column:span 2}}'+
+        '\n@media (max-width:680px){#news .news-grid{grid-template-columns:1fr}#news .news-card.wide{grid-column:span 1}}';
+        document.head.appendChild(style);
+    }
+
+    if (!document.getElementById('news')) {
+        var newsHtml = '\n<section id="news">'+
+        '\n  <div class="container latest-news-wrap">'+
+        '\n    <h2 class="section-title wow fadeInUp">Latest News</h2>'+
+        '\n    <div class="spacer" data-height="60"></div>'+
+        '\n    <p class="latest-news-sub wow fadeInUp">Recent highlights from 2025 onward across awards, publications, internships, and ongoing research.</p>'+
+        '\n    <div class="news-grid">'+
+        '\n      <section class="news-card red wow fadeInUp">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">2025</span></div>'+
+        '\n        <h3>Confluent Kafka PhD Fellowship</h3>'+
+        '\n        <p>Selected as a Confluent Kafka PhD Fellow, a highly selective recognition for doctoral research advancing distributed streaming systems, cloud infrastructure, and the systems and networking foundations behind Kafka-scale platforms.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">Fellowship</span><span class="news-tag">Distributed Systems</span><span class="news-tag">Streaming Infrastructure</span><span class="news-tag">Cloud Systems</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">Fall ’26</span></div>'+
+        '\n        <h3>NASA JPL Student Research Candidate, Preliminary</h3>'+
+        '\n        <p>Selected as a preliminary student research candidate for Fall ’26.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Research Candidate</span><span class="news-tag">Preliminary</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">PUBLICATION</span><span class="news-year">2026</span></div>'+
+        '\n        <h3>Joint Network-and-Server Congestion in Multi-Source Traffic Allocation: A Convex Formulation and Price-Based Decentralization</h3>'+
+        '\n        <p>Accepted at IEEE/ACM WiOpt 2026. This work studies principled traffic allocation under joint network and server congestion, with a convex formulation and price-based decentralization.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">WiOpt 2026</span><span class="news-tag">Cloud Systems</span><span class="news-tag">Optimization</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card teal wow fadeInUp">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">PUBLICATION</span><span class="news-year">2025</span></div>'+
+        '\n        <h3>Keeping a Target “On the Radar”, Using Model-Based Group Sensor Selection Algorithms</h3>'+
+        '\n        <p>Published at IEEE MILCOM 2025, on acoustic localization and sensor selection under constrained tactical networking conditions.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">MILCOM 2025</span><span class="news-tag">IoBT</span><span class="news-tag">Acoustic Localization</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">RESEARCH</span><span class="news-year">2025–Present</span></div>'+
+        '\n        <h3>Personalized Federated Learning at CMU</h3>'+
+        '\n        <p>Working on personalized FL directions with <strong>Prof. Carlee Joe-Wong</strong>, focusing on heterogeneous clients and practical distributed learning systems.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">CMU</span><span class="news-tag">Prof. Carlee Joe-Wong</span><span class="news-tag">Federated Learning</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">RESEARCH INTERNSHIP</span><span class="news-year">Summer 2025</span></div>'+
+        '\n        <h3>Confluent Research Internship</h3>'+
+        '\n        <p>Research on Kafka and cloud-scale distributed infrastructure, including network-aware path selection, system-level optimization, and resilience questions tied to intermittent servers and dynamic cloud conditions.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">Kafka</span><span class="news-tag">Cloud</span><span class="news-tag">Network Optimization</span><span class="news-tag">Intermittent Servers</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card red wide wow fadeInUp">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">WHAT\'S COOKING?</span><span class="news-year">Now</span></div>'+
+        '\n        <h3><span class="news-dot"></span>What’s Cooking?</h3>'+
+        '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>Personalized FL systems and modeling directions</li></ul>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n    </div>'+
+        '\n  </div>'+
+        '\n</section>';
+
+        $('#research').before(newsHtml);
+        $('.spacer').each(function() {
+            var size = this.getAttribute('data-height');
+            this.style.height = '' + size + 'px';
+        });
+        setTimeout(function(){new WOW().init();}, 0);
+    }
+
+    if ($('.desktop-header-3 .navbar-nav a[href="#news"]').length === 0) {
+        var $experienceItem = $('.desktop-header-3 .navbar-nav a[href="#experience"]').closest('li');
+        if ($experienceItem.length) {
+            $experienceItem.after('<li class="nav-item"><a href="#news" class="nav-link">News</a></li>');
+        }
+    }
 });
