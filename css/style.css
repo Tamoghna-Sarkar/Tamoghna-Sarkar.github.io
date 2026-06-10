@@ -1832,6 +1832,19 @@ body.dark footer.footer {
   margin: 0;
 }
 
+.timeline .content .experience-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.timeline .content .experience-list li {
+  margin-bottom: 8px;
+}
+
+.timeline .content .experience-list li:last-child {
+  margin-bottom: 0;
+}
+
 .timeline span.line {
   position: absolute;
   width: 1px;
