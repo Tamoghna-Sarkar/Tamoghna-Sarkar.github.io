@@ -373,7 +373,7 @@ $(function() {
         style.textContent = '\n#news .latest-news-wrap{max-width:1100px;margin:0 auto}'+
         '\n#news .latest-news-sub{color:#b8b6d9;margin:0 0 30px;max-width:760px}'+
         '\n#news .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px;align-items:stretch}'+
-        '\n#news .news-card{position:relative;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 22px;overflow:hidden;min-height:250px;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
+        '\n#news .news-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 22px;overflow:hidden;min-height:280px;height:100%;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
         '\n#news .news-card:before{content:"";position:absolute;inset:auto auto -40px -20px;width:160px;height:160px;border-radius:50%;filter:blur(35px);opacity:.20;pointer-events:none}'+
         '\n#news .news-card.red:before{background:#FF4C60}'+
         '\n#news .news-card.yellow:before{background:#FFD15C}'+
@@ -383,16 +383,16 @@ $(function() {
         '\n#news .news-eyebrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}'+
         '\n#news .news-pill{display:inline-block;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.08);color:#fff}'+
         '\n#news .news-year{color:#b8b6d9;font-size:13px;font-weight:600}'+
-        '\n#news .news-card h3{font-size:22px;line-height:1.3;margin:6px 0 10px;color:#fff}'+
-        '\n#news .news-card p{margin:0 0 14px;color:#eceafd}'+
-        '\n#news .news-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}'+
+        '\n#news .news-card h3{font-size:20px;line-height:1.3;margin:6px 0 10px;color:#fff}'+
+        '\n#news .news-card p{margin:0 0 14px;color:#eceafd;flex:1 1 auto}'+
+        '\n#news .news-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-bottom:6px}'+
         '\n#news .news-tag{font-size:12px;padding:6px 10px;border-radius:999px;color:#f5f4ff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08)}'+
-        '\n#news .news-card.wide{grid-column:span 3;min-height:190px}'+
-        '\n#news .news-list{margin:12px 0 0 0;padding-left:18px;color:#eceafd}'+
+        '\n#news .news-card.wide{grid-column:span 3;min-height:0}'+
+        '\n#news .news-list{margin:12px 0 0 0;padding-left:18px;color:#eceafd;flex:1 1 auto}'+
         '\n#news .news-list li{margin:8px 0}'+
         '\n#news .news-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#FFD15C;margin-right:8px;box-shadow:0 0 0 8px rgba(255,209,92,.12);vertical-align:middle}'+
         '\n@media (max-width:980px){#news .news-grid{grid-template-columns:1fr 1fr}#news .news-card.wide{grid-column:span 2}}'+
-        '\n@media (max-width:680px){#news .news-grid{grid-template-columns:1fr}#news .news-card.wide{grid-column:span 1}}';
+        '\n@media (max-width:680px){#news .news-grid{grid-template-columns:1fr}#news .news-card.wide{grid-column:span 1}#news .news-card{min-height:0}}';
         document.head.appendChild(style);
     }
 
@@ -417,18 +417,18 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">Fellowship</span><span class="news-tag">Distributed Systems</span><span class="news-tag">Streaming Infrastructure</span><span class="news-tag">Cloud Systems</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
-        '\n        <div class="news-eyebrow"><span class="news-pill">INVITATION &amp; SELECTION</span><span class="news-year">Summer ’26</span></div>'+
-        '\n        <h3>NASA JPL Visiting Research Student</h3>'+
-        '\n        <p>Invited and selected to join NASA Jet Propulsion Laboratory as a Visiting Research Student for Summer ’26 on <em>Generative Test Design and Validation for Ground Derived Channel Value Assignment in Mission Control Systems</em>. The role blends research and systems work: designing generative test strategies for GDC value-assignment logic under complex telemetry, timing, and configuration interactions, and strengthening CI/CD validation pipelines with better observability, failure diagnostics, and reproducible containerized test environments for mission-critical ground software.</p>'+
-        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Visiting Research Student</span><span class="news-tag">Generative Testing</span><span class="news-tag">Mission Control Systems</span><span class="news-tag">CI/CD</span></div>'+
-        '\n        <div class="news-accent"></div>'+
-        '\n      </section>'+
         '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">PUBLICATION</span><span class="news-year">2026</span></div>'+
         '\n        <h3>Joint Network-and-Server Congestion in Multi-Source Traffic Allocation: A Convex Formulation and Price-Based Decentralization</h3>'+
         '\n        <p>Accepted at IEEE/ACM WiOpt 2026. This work studies principled traffic allocation under joint network and server congestion, with a convex formulation and price-based decentralization.</p>'+
         '\n        <div class="news-tags"><span class="news-tag">WiOpt 2026</span><span class="news-tag">Cloud Systems</span><span class="news-tag">Optimization</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card yellow wide wow fadeInUp" data-wow-delay="0.1s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">INVITATION &amp; SELECTION</span><span class="news-year">Summer ’26</span></div>'+
+        '\n        <h3>NASA JPL Visiting Research Student</h3>'+
+        '\n        <p>Invited and selected to join NASA Jet Propulsion Laboratory as a Visiting Research Student for Summer ’26 on <em>Generative Test Design and Validation for Ground Derived Channel Value Assignment in Mission Control Systems</em>. The role blends research and systems work: designing generative test strategies for GDC value-assignment logic under complex telemetry, timing, and configuration interactions, and strengthening CI/CD validation pipelines with better observability, failure diagnostics, and reproducible containerized test environments for mission-critical ground software.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Visiting Research Student</span><span class="news-tag">Generative Testing</span><span class="news-tag">Mission Control Systems</span><span class="news-tag">CI/CD</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
@@ -445,7 +445,7 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">Kafka</span><span class="news-tag">Cloud</span><span class="news-tag">Network Optimization</span><span class="news-tag">Intermittent Servers</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card red wide wow fadeInUp">'+
+        '\n      <section class="news-card red wow fadeInUp">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">WHAT\'S COOKING?</span><span class="news-year">Now</span></div>'+
         '\n        <h3><span class="news-dot"></span>What’s Cooking?</h3>'+
         '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>Personalized FL systems and modeling directions</li></ul>'+
