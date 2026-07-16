@@ -373,7 +373,7 @@ $(function() {
         style.textContent = '\n#news .latest-news-wrap{max-width:1100px;margin:0 auto}'+
         '\n#news .latest-news-sub{color:#b8b6d9;margin:0 0 30px;max-width:760px}'+
         '\n#news .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px;align-items:stretch}'+
-        '\n#news .news-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 22px;overflow:hidden;min-height:280px;height:100%;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
+        '\n#news .news-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 28px;overflow:visible;min-height:280px;height:auto;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
         '\n#news .news-card:before{content:"";position:absolute;inset:auto auto -40px -20px;width:160px;height:160px;border-radius:50%;filter:blur(35px);opacity:.20;pointer-events:none}'+
         '\n#news .news-card.red:before{background:#FF4C60}'+
         '\n#news .news-card.yellow:before{background:#FFD15C}'+
@@ -445,7 +445,7 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">Kafka</span><span class="news-tag">Cloud</span><span class="news-tag">Network Optimization</span><span class="news-tag">Intermittent Servers</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card red wow fadeInUp">'+
+        '\n      <section class="news-card red wide wow fadeInUp">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">WHAT\'S COOKING?</span><span class="news-year">Now</span></div>'+
         '\n        <h3><span class="news-dot"></span>What’s Cooking?</h3>'+
         '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>Personalized FL systems and modeling directions</li></ul>'+
