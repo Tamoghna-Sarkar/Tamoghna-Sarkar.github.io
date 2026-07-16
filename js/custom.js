@@ -403,6 +403,13 @@ $(function() {
         '\n    <div class="spacer" data-height="60"></div>'+
         '\n    <p class="latest-news-sub wow fadeInUp">Recent highlights from 2025 onward across awards, publications, internships, and ongoing research.</p>'+
         '\n    <div class="news-grid">'+
+        '\n      <section class="news-card teal wow fadeInUp">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">RESEARCH INTERNSHIP</span><span class="news-year">Summer \u201926</span></div>'+
+        '\n        <h3>Piris Labs PhD Research Intern (LLM Inference Systems)</h3>'+
+        '\n        <p>Started as a PhD Research Intern at Piris Labs in San Francisco, working on LLM inference systems and model serving.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">Piris Labs</span><span class="news-tag">LLM Inference</span><span class="news-tag">SGLang</span><span class="news-tag">Serving</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
         '\n      <section class="news-card red wow fadeInUp">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">2025</span></div>'+
         '\n        <h3>Confluent Kafka PhD Fellowship</h3>'+
