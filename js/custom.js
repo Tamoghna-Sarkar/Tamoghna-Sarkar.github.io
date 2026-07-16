@@ -373,26 +373,27 @@ $(function() {
         style.textContent = '\n#news .latest-news-wrap{max-width:1100px;margin:0 auto}'+
         '\n#news .latest-news-sub{color:#b8b6d9;margin:0 0 30px;max-width:760px}'+
         '\n#news .news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-bottom:22px;align-items:stretch}'+
-        '\n#news .news-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 28px;overflow:visible;min-height:280px;height:auto;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
-        '\n#news .news-card:before{content:"";position:absolute;inset:auto auto -40px -20px;width:160px;height:160px;border-radius:50%;filter:blur(35px);opacity:.20;pointer-events:none}'+
+        '\n#news .news-card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.015));border:1px solid rgba(255,255,255,.08);border-radius:26px;padding:24px 24px 28px;overflow:visible;min-height:300px;height:100%;box-sizing:border-box;box-shadow:0 12px 40px rgba(0,0,0,.20)}'+
+        '\n#news .news-card:before{content:"";position:absolute;inset:auto auto -40px -20px;width:160px;height:160px;border-radius:50%;filter:blur(35px);opacity:.20;pointer-events:none;z-index:0}'+
         '\n#news .news-card.red:before{background:#FF4C60}'+
         '\n#news .news-card.yellow:before{background:#FFD15C}'+
         '\n#news .news-card.purple:before{background:#6C6CE5}'+
         '\n#news .news-card.teal:before{background:#44D7B6}'+
-        '\n#news .news-accent{position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#FF4C60,#FFD15C,#6C6CE5,#44D7B6);opacity:.9}'+
-        '\n#news .news-eyebrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px}'+
+        '\n#news .news-accent{position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#FF4C60,#FFD15C,#6C6CE5,#44D7B6);opacity:.9;z-index:1}'+
+        '\n#news .news-eyebrow{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:10px;position:relative;z-index:1}'+
         '\n#news .news-pill{display:inline-block;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.04em;background:rgba(255,255,255,.08);color:#fff}'+
         '\n#news .news-year{color:#b8b6d9;font-size:13px;font-weight:600}'+
-        '\n#news .news-card h3{font-size:20px;line-height:1.3;margin:6px 0 10px;color:#fff}'+
-        '\n#news .news-card p{margin:0 0 14px;color:#eceafd;flex:1 1 auto}'+
-        '\n#news .news-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-bottom:6px}'+
+        '\n#news .news-card h3{font-size:20px;line-height:1.3;margin:6px 0 10px;color:#fff;position:relative;z-index:1}'+
+        '\n#news .news-card:not(.wide) h3{min-height:3.9em}'+
+        '\n#news .news-card p{margin:0 0 14px;color:#eceafd;flex:1 1 auto;position:relative;z-index:1}'+
+        '\n#news .news-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto;padding-bottom:6px;position:relative;z-index:1}'+
         '\n#news .news-tag{font-size:12px;padding:6px 10px;border-radius:999px;color:#f5f4ff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08)}'+
-        '\n#news .news-card.wide{grid-column:span 3;min-height:0}'+
-        '\n#news .news-list{margin:12px 0 0 0;padding-left:18px;color:#eceafd;flex:1 1 auto}'+
+        '\n#news .news-card.wide{grid-column:span 3;min-height:0;height:auto}'+
+        '\n#news .news-list{margin:12px 0 0 0;padding-left:18px;color:#eceafd;flex:1 1 auto;position:relative;z-index:1}'+
         '\n#news .news-list li{margin:8px 0}'+
         '\n#news .news-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#FFD15C;margin-right:8px;box-shadow:0 0 0 8px rgba(255,209,92,.12);vertical-align:middle}'+
-        '\n@media (max-width:980px){#news .news-grid{grid-template-columns:1fr 1fr}#news .news-card.wide{grid-column:span 2}}'+
-        '\n@media (max-width:680px){#news .news-grid{grid-template-columns:1fr}#news .news-card.wide{grid-column:span 1}#news .news-card{min-height:0}}';
+        '\n@media (max-width:980px){#news .news-grid{grid-template-columns:1fr 1fr}#news .news-card.wide{grid-column:span 2}#news .news-card:not(.wide) h3{min-height:0}}'+
+        '\n@media (max-width:680px){#news .news-grid{grid-template-columns:1fr}#news .news-card.wide{grid-column:span 1}#news .news-card{min-height:0;height:auto}}';
         document.head.appendChild(style);
     }
 
@@ -445,7 +446,7 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">Kafka</span><span class="news-tag">Cloud</span><span class="news-tag">Network Optimization</span><span class="news-tag">Intermittent Servers</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card red wide wow fadeInUp">'+
+        '\n      <section class="news-card red wow fadeInUp">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">WHAT\'S COOKING?</span><span class="news-year">Now</span></div>'+
         '\n        <h3><span class="news-dot"></span>What’s Cooking?</h3>'+
         '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>Personalized FL systems and modeling directions</li></ul>'+
