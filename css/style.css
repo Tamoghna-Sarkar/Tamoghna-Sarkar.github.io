@@ -1828,6 +1828,12 @@ body.dark footer.footer {
   margin: 10px 0;
 }
 
+.timeline .content .org-name {
+  color: #FFD15C;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
 .timeline .content p {
   margin: 0;
 }
