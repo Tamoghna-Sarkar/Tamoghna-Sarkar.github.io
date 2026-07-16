@@ -418,10 +418,10 @@ $(function() {
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
-        '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">Fall ’26</span></div>'+
-        '\n        <h3>NASA JPL Student Research Candidate, Preliminary</h3>'+
-        '\n        <p>Selected as a preliminary student research candidate for Fall ’26.</p>'+
-        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Research Candidate</span><span class="news-tag">Preliminary</span></div>'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">INVITATION &amp; SELECTION</span><span class="news-year">Summer ’26</span></div>'+
+        '\n        <h3>NASA JPL Visiting Research Student</h3>'+
+        '\n        <p>Invited and selected to join NASA Jet Propulsion Laboratory as a Visiting Research Student for Summer ’26.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Visiting Research Student</span><span class="news-tag">Summer 2026</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
