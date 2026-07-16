@@ -1835,7 +1835,6 @@ body.dark footer.footer {
 }
 
 .behind-scenes-note {
-  max-width: 780px;
   margin: 40px auto 10px;
   padding: 0 16px;
   text-align: center;
@@ -1844,6 +1843,12 @@ body.dark footer.footer {
   font-weight: 700;
   color: #fff;
   font-style: normal;
+}
+
+.behind-scenes-inner {
+  display: inline-block;
+  text-align: center;
+  max-width: 100%;
 }
 
 .timeline .content p {
