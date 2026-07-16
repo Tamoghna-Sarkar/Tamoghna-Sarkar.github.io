@@ -935,6 +935,37 @@ section.home.light .social-icons li a:hover {
   font-size: 14px;
 }
 
+.focus-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.focus-list .focus-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 0 0 18px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.focus-list .focus-item:last-child {
+  margin-bottom: 0;
+}
+
+.focus-list .focus-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-top: 6px;
+  border-radius: 50%;
+  flex: 0 0 auto;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.06);
+}
+
 /*=================================================================*/
 /*                      SERVICE                              
 /*=================================================================*/
