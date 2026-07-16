@@ -320,6 +320,15 @@ $(function(){
             $(this).animate({ width: bar_value }, { easing: 'linear' });
           });
 
+          $('.focus-accent').each(function(index) {
+            var $accent = $(this);
+            var accent_value = ($accent.attr('data-width') || '40') + '%';
+            $accent.delay(index * 160).animate(
+              { width: accent_value },
+              { duration: 700, easing: 'swing' }
+            );
+          });
+
           this.destroy()
         },
         offset: '50%'
