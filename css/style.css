@@ -930,9 +930,11 @@ section.home.light .social-icons li a:hover {
 .skill-item .skill-info h4 {
   font-size: 16px;
   font-weight: 500;
+  max-width: calc(100% - 140px);
 }
 .skill-item .skill-info span {
   font-size: 14px;
+  white-space: nowrap;
 }
 
 /*=================================================================*/
