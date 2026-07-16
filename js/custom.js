@@ -431,13 +431,6 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">WiOpt 2026</span><span class="news-tag">Cloud Systems</span><span class="news-tag">Optimization</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card teal wow fadeInUp">'+
-        '\n        <div class="news-eyebrow"><span class="news-pill">PUBLICATION</span><span class="news-year">2025</span></div>'+
-        '\n        <h3>Keeping a Target “On the Radar”, Using Model-Based Group Sensor Selection Algorithms</h3>'+
-        '\n        <p>Published at IEEE MILCOM 2025, on acoustic localization and sensor selection under constrained tactical networking conditions.</p>'+
-        '\n        <div class="news-tags"><span class="news-tag">MILCOM 2025</span><span class="news-tag">IoBT</span><span class="news-tag">Acoustic Localization</span></div>'+
-        '\n        <div class="news-accent"></div>'+
-        '\n      </section>'+
         '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">RESEARCH</span><span class="news-year">2025–Present</span></div>'+
         '\n        <h3>Personalized Federated Learning at CMU</h3>'+
