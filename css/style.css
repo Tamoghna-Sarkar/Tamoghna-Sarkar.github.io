@@ -1829,9 +1829,9 @@ body.dark footer.footer {
 }
 
 .timeline .content .org-name {
-  color: #FFD15C;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
 .timeline .content p {
