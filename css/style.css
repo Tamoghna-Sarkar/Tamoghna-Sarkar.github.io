@@ -1835,15 +1835,15 @@ body.dark footer.footer {
 }
 
 .behind-scenes-note {
-  max-width: 720px;
-  margin: 28px auto 0;
-  padding: 0 20px;
+  max-width: 780px;
+  margin: 40px auto 10px;
+  padding: 0 16px;
   text-align: center;
-  font-size: 15px;
-  line-height: 1.55;
-  font-weight: 400;
-  color: #b8b6d9;
-  font-style: italic;
+  font-size: 22px;
+  line-height: 1.45;
+  font-weight: 700;
+  color: #fff;
+  font-style: normal;
 }
 
 .timeline .content p {
