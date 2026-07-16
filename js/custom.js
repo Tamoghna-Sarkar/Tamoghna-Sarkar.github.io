@@ -420,8 +420,8 @@ $(function() {
         '\n      <section class="news-card yellow wow fadeInUp" data-wow-delay="0.1s">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">INVITATION &amp; SELECTION</span><span class="news-year">Summer ’26</span></div>'+
         '\n        <h3>NASA JPL Visiting Research Student</h3>'+
-        '\n        <p>Invited and selected to join NASA Jet Propulsion Laboratory as a Visiting Research Student for Summer ’26, on <em>Generative Test Design and Validation for Ground Derived Channel Value Assignment in Mission Control Systems</em> — hardening the CI/CD pipeline and automated test infrastructure for mission-critical ground software, with a focus on test observability, failure diagnostics, and reproducible, containerized test environments.</p>'+
-        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Visiting Research Student</span><span class="news-tag">Mission Control Systems</span><span class="news-tag">CI/CD</span><span class="news-tag">Test Automation</span></div>'+
+        '\n        <p>Invited and selected to join NASA Jet Propulsion Laboratory as a Visiting Research Student for Summer ’26 on <em>Generative Test Design and Validation for Ground Derived Channel Value Assignment in Mission Control Systems</em>. The role blends research and systems work: designing generative test strategies for GDC value-assignment logic under complex telemetry, timing, and configuration interactions, and strengthening CI/CD validation pipelines with better observability, failure diagnostics, and reproducible containerized test environments for mission-critical ground software.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">NASA JPL</span><span class="news-tag">Visiting Research Student</span><span class="news-tag">Generative Testing</span><span class="news-tag">Mission Control Systems</span><span class="news-tag">CI/CD</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
