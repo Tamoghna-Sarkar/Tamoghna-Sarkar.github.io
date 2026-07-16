@@ -1834,6 +1834,18 @@ body.dark footer.footer {
   text-decoration-thickness: 1px;
 }
 
+.behind-scenes-note {
+  max-width: 720px;
+  margin: 28px auto 0;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.55;
+  font-weight: 400;
+  color: #b8b6d9;
+  font-style: italic;
+}
+
 .timeline .content p {
   margin: 0;
 }
