@@ -411,18 +411,18 @@ $(function() {
         '\n        <div class="news-tags"><span class="news-tag">Piris Labs</span><span class="news-tag">LLM Inference</span><span class="news-tag">SGLang</span><span class="news-tag">Serving</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
-        '\n      <section class="news-card red wow fadeInUp">'+
-        '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">2025</span></div>'+
-        '\n        <h3>Confluent Kafka PhD Fellowship</h3>'+
-        '\n        <p>Selected as a Confluent Kafka PhD Fellow, a highly selective recognition for doctoral research advancing distributed streaming systems, cloud infrastructure, and the systems and networking foundations behind Kafka-scale platforms.</p>'+
-        '\n        <div class="news-tags"><span class="news-tag">Fellowship</span><span class="news-tag">Distributed Systems</span><span class="news-tag">Streaming Infrastructure</span><span class="news-tag">Cloud Systems</span></div>'+
-        '\n        <div class="news-accent"></div>'+
-        '\n      </section>'+
-        '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.2s">'+
+        '\n      <section class="news-card purple wow fadeInUp" data-wow-delay="0.1s">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">PUBLICATION</span><span class="news-year">2026</span></div>'+
         '\n        <h3>Joint Network-and-Server Congestion in Multi-Source Traffic Allocation: A Convex Formulation and Price-Based Decentralization</h3>'+
         '\n        <p>Accepted at IEEE/ACM WiOpt 2026. This work studies principled traffic allocation under joint network and server congestion, with a convex formulation and price-based decentralization.</p>'+
         '\n        <div class="news-tags"><span class="news-tag">WiOpt 2026</span><span class="news-tag">Cloud Systems</span><span class="news-tag">Optimization</span></div>'+
+        '\n        <div class="news-accent"></div>'+
+        '\n      </section>'+
+        '\n      <section class="news-card red wow fadeInUp" data-wow-delay="0.2s">'+
+        '\n        <div class="news-eyebrow"><span class="news-pill">AWARD</span><span class="news-year">2025</span></div>'+
+        '\n        <h3>Confluent Kafka PhD Fellowship</h3>'+
+        '\n        <p>Selected as a Confluent Kafka PhD Fellow, a highly selective recognition for doctoral research advancing distributed streaming systems, cloud infrastructure, and the systems and networking foundations behind Kafka-scale platforms.</p>'+
+        '\n        <div class="news-tags"><span class="news-tag">Fellowship</span><span class="news-tag">Distributed Systems</span><span class="news-tag">Streaming Infrastructure</span><span class="news-tag">Cloud Systems</span></div>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n      <section class="news-card yellow wide wow fadeInUp" data-wow-delay="0.1s">'+
@@ -449,7 +449,7 @@ $(function() {
         '\n      <section class="news-card red wow fadeInUp">'+
         '\n        <div class="news-eyebrow"><span class="news-pill">WHAT\'S COOKING?</span><span class="news-year">Now</span></div>'+
         '\n        <h3><span class="news-dot"></span>What’s Cooking?</h3>'+
-        '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>Personalized FL systems and modeling directions</li></ul>'+
+        '\n        <ul class="news-list"><li>Systems work around Kafka routing and control</li><li>Multimodal acoustic plus video localization dataset development</li><li>One paper under preparation for IEEE Transactions on Networking</li><li>One paper targeting NSDI, EdgeSys, or a similar top-tier systems venue</li></ul>'+
         '\n        <div class="news-accent"></div>'+
         '\n      </section>'+
         '\n    </div>'+
